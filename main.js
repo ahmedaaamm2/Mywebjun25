@@ -1,39 +1,25 @@
 
-import {collectData, addArea, addPrices, showCollectedData } from "./adddata.js";
-import { getDetails } from "./getdetails.js";
+import {pfDiv } from "./adddata.js";
 import { showData } from "./showData.js";
 import { colorizeTable } from "./coloring.js";
 import { data } from "./database.js";
 
 showData()
 colorizeTable()
-
+pfDiv
 
 
 
 
 //////////////////////////////////////////////////////////////////////////
-export function createButton(){
-  const btn = document.createElement('button');
-  btn.id = 'idcollectData'
-  btn.textContent = 'Add'
-  btn.style.height = '20px'
-  btn.style.width = '15%'
-  btn.style.backgroundColor = 'Brown'
-  btn.style.margin = 'auto'
-  btn.style.borderRadius = '10px'
-  btn.style.fontSize = '12px'
-  document.getElementById('htmlbtn').after(btn)
-  btn.onclick = collectData
-}
-createButton() 
 
-  
+
+
 //////////////////////////////////////////////////////////////////////////
 
 function figuers(){
   // const yy = document.getElementsById("idhead")
-  const aa = document.getElementById("idhead")
+  const aa = document.getElementById("search")
   const  figuersDiv = document.createElement('div');
   figuersDiv.id = 'idfiguersDiv'
   figuersDiv.style.height = '25px'
@@ -43,14 +29,14 @@ function figuers(){
   figuersDiv.style.border = 'space-evenly'
   figuersDiv.style.gap = '4px'
   figuersDiv.style.border = '4px'
-  figuersDiv.style.backgroundColor = '#294b8b'
+  // figuersDiv.style.backgroundColor = 'gray'
 
   const btnFiguers = ['Leased 50', 'Vacant 10', 'Contract 15', 'Booked 15', 'Deposit 10', 'OnHold 0', 'Total 100']
 
   btnFiguers.forEach((name, index) => {
       const buttons = document.createElement('button');
       buttons.textContent = name
-      buttons.style.backgroundColor = '#294b8b'
+      buttons.style.backgroundColor = 'graay'
       buttons.style.height = '25px'
       buttons.style.borderRadius = '10px'
       buttons.style.fontSize = '13px'

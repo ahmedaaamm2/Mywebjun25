@@ -77,8 +77,13 @@ button{
     height: 70px;
     text-align: center;
     border-radius: 5px;
+<<<<<<< HEAD
     background-color: #294b8b;
     /* background-color: #3e8b29; */
+=======
+    /* background-color: #294b8b; */
+    background-color: #228020;
+>>>>>>> ahmed
     color: wheat;
     font-size: 16px;
     outline: #212121 solid 2px;
